@@ -45,3 +45,21 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
+.background-skills {
+    height: 95vh;
+    background-color: sandybrown;
+    clip-path: polygon(0 17vh, 100% 0, 100% 75vh, 0 96%);
+}
+
+.projects {
+    height: 95vh;
+    background-color: #deebe7;
+    clip-path: polygon(0 17vh, 100% 0, 100% 75vh, 0 96%);
+}
+
+.about {
+    height: 95vh;
+    background-color: sandybrown;
+    clip-path: polygon(0 17vh, 100% 0, 100% 75vh, 0 96%);
+}
