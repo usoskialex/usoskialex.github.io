@@ -185,7 +185,9 @@ img {
     align-content: space-between;
 }
 
-.projects-cont {}
+.projects-cont {
+    border: 4px solid black;
+}
 
 .footer {
     text-align: center;
