@@ -9,42 +9,80 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Link for Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/9146ab1f9d.js" crossorigin="anonymous"></script>
     <!-- Link to CSS file-->
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+</head>
 <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Portfolio</a>
+            
+            <div class="logo-box">
+              <div class="logo">AU</div>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                <a class="nav-link" href="#">Background and Skills</a>
+                <a class="nav-link" href="#">Education and Skills</a>
                 <a class="nav-link" href="#">Projects</a>
-                <a class="nav-link" href="#">About</a>
               </div>
             </div>
+            <div class="icons">
+              <i class="fab fa-linkedin fa-2x"></i>
+              <i class="fab fa-github-square fa-2x"></i>
+            </div>
+            
           </div>
       </nav>
     </header>
     <!--Section 1 home-->
     <section class="home-page">
-
+      <div class="home-content">
+        Hey, I’m Alex.<br>
+        A web developer from Seattle.<br> I'm passionate about creating websites and applications.<br>
+        You can download my resume 
+        <button id="resume-button"><a href="/resources/resume/Resume.docx" download></a><strong>here</strong></a></button>
+        </div>
     </section>
     <!--Section 2 Background and skills-->
     <section class="background-skills">
-      
+      <div class="background-pic"><img src="/resources/images/Alex_photo.jpeg" alt="Photo of Alex" id="my-pic"/>
+      </div>
+      <div class="background-content">
+        <h2>Educational background:</h2>
+        <p class="education-content">AAS, Web Application Programming - Cascadia College<br> 2016-2019</p>
+        <p class="education-content">Generation Bootcamp <br>2021</p>
+        <h2>Certificates:</h2>
+        <p class="education-content">JavaScript Programming <br>2019</p>
+        <p class="education-content">UDEMY “Advanced CSS and SASS”<br> 2018</p>
+      </div>
+      <div class="skills">
+        <h2 id="skills">Skills</h2>
+        <div class="skills-container">
+          <i class="fab fa-html5 fa-5x"></i>
+          <i class="fab fa-css3-alt fa-5x"></i>
+          <i class="fab fa-sass fa-5x"></i>
+          <i class="fab fa-js-square fa-5x"></i>
+          <i class="fab fa-bootstrap fa-5x"></i>
+        </div>
+      </div>
+
     </section>
     <!--Section 3 Projects-->
     <section class="projects">
-      
+      <h1>Projects</h1>
+      <div class="projects-cont">212212</div>
+      <div class="projects-cont">221212</div>
     </section>
-    <!--Section 4 About-->
-    <section class="about">
-      
-    </section>
+
+    <footer class="footer">Copyright Aliaksandr Usoski</footer>
 </body>
 </html>

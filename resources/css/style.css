@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 @media only screen and (max-width: 600px) {
@@ -18,17 +18,55 @@
 
 }
 
+html {
+    font-size: 62.5%;
+    /*to make rem 10px*/
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400px;
+    font-weight: 40rem;
     line-height: 1.7;
-    padding: 30px;
+    padding: 2rem 7rem;
+    background-color: #f4f5e8;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+
+h2 {
+    font-size: 3rem;
+}
+
+
+.navbar-nav {
+    padding-right: 3rem;
 }
 
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
+    font-size: 2rem;
+}
+
+.icons i {
+    padding: 0 0.5rem;
+}
+
+.logo-box {
+    border: 0.3rem solid black;
+    width: 4rem;
+    height: 4rem;
+    text-shadow: slategray;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    color: red;
+    font-size: 2rem;
 }
 
 .home-page {
@@ -40,26 +78,116 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 96%);
 }
 
+.home-content {
+    font-size: 4rem;
+    font-family: 'Tourney', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 .flex_cont {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+#resume-button {
+    border-radius: 1rem;
+    text-transform: uppercase;
+    background-color: #deebe7;
+}
+
+/*background section*/
 .background-skills {
     height: 95vh;
     background-color: sandybrown;
     clip-path: polygon(0 17vh, 100% 0, 100% 75vh, 0 96%);
+    display: grid;
+    grid-template-columns: 20% 20% 10% 30% 10% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 }
+
+.background-pic {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+img {
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+#my-pic {
+    max-width: 30rem;
+}
+
+
+.background-content {
+    grid-row-start: 4;
+    grid-row-end: span 3;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    line-height: 2.5;
+}
+
+.skills {
+    grid-row-start: 7;
+    grid-row-end: span 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+}
+
+#skills {
+    text-align: center;
+}
+
+#skills-content {
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    color: #2f7a64;
+}
+
+
+.education {
+    grid-row-start: 4;
+    grid-row-end: span 3;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.education-content {
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+
+/*Projects section*/
 
 .projects {
     height: 95vh;
     background-color: #deebe7;
     clip-path: polygon(0 17vh, 100% 0, 100% 75vh, 0 96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
 }
 
-.about {
-    height: 95vh;
-    background-color: sandybrown;
-    clip-path: polygon(0 17vh, 100% 0, 100% 75vh, 0 96%);
+.projects-cont {}
+
+.footer {
+    text-align: center;
+    font-size: 1.4rem;
 }
